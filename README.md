@@ -1,7 +1,6 @@
-# winscp_crypt
-WinSCP Password Encrypt/Decrypt
+# WinSCP Password Encrypt/Decrypt
 
-# Simple usage
+## Simple usage
 
 ```var WinSCP = new WinSCP();
 
