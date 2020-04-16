@@ -12,4 +12,4 @@ var encrypted = WinSCP.encrypt(user, host, pass);
 var decrypted = WinSCP.decrypt(user, host, encrypted);
 
 console.log(encrypted);
-console.log(decrypted);```
+console.log(decrypted);
