@@ -2,7 +2,8 @@
 
 ## Simple usage
 
-```var WinSCP = new WinSCP();
+```javascript
+var WinSCP = new WinSCP();
 
 var user = 'root';
 var host = '127.0.0.1';
