@@ -64,7 +64,7 @@ function WinSCP() {
 
   // Descrypt password
   this.decrypt = function(username, hostname, encrypted) {
-    if (!encrypted.match(/[a-f0-9]+/)) {
+    if (!encrypted.match(/[A-F0-9]+/)) {
       return '';
     }
 
