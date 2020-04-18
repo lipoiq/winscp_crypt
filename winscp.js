@@ -24,11 +24,8 @@ function WinSCP() {
       return WSCP_SIMPLE_INTERNAL;
     }
 
-    var a = WSCP_SIMPLE_STRING.indexOf(WSCP_CHARS[0]);
-    var b = WSCP_SIMPLE_STRING.indexOf(WSCP_CHARS[1]);
-
-    WSCP_CHARS.shift();
-    WSCP_CHARS.shift();
+    var a = WSCP_SIMPLE_STRING.indexOf(WSCP_CHARS.shift());
+    var b = WSCP_SIMPLE_STRING.indexOf(WSCP_CHARS.shift());
 
     return WSCP_SIMPLE_FLAG & ~(((a << 4) + b << 0) ^ WSCP_SIMPLE_MAGIC);
   }
