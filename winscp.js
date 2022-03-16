@@ -32,7 +32,7 @@ function WinSCP() {
 
   // Encrypt password
   this.encrypt = function(username, hostname, password) {
-    var salt = username+''+hostname+''+password, shift = 0;;
+    var salt = [username, hostname, password].join(''), shift = 0;;
 
     if (salt.length < WSCP_SIMPLE_MAXLEN) {
       shift = rand(0, WSCP_SIMPLE_MAXLEN - salt.length);
@@ -65,8 +65,7 @@ function WinSCP() {
       return '';
     }
 
-    var result = [];
-    var key = username+''+hostname;
+    var result = [], key = [username, hostname].join('');
 
     WSCP_CHARS = encrypted.split('');
 
